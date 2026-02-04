@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/demo/">
+    <Project Path="demo/AIConnector.Site/AIConnector.Site.csproj" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/Jumoo.TranslationManager.UmbracoAi/Jumoo.TranslationManager.UmbracoAi.csproj" />
+  </Folder>
+</Solution>

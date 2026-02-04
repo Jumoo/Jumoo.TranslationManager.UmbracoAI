@@ -1,0 +1,19 @@
+{
+  "name": "jumoo-translation-manager-umbraco-ai",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "watch": "tsc && vite build --watch",
+    "build": "tsc && vite build"
+  },
+  "devDependencies": {
+    "@hey-api/client-fetch": "^0.13.1",
+    "@hey-api/openapi-ts": "^0.85.0",
+    "@jumoo/translate": "^17.0.0",
+    "@jumoo/translate-ai": "^1.0.1",
+    "@umbraco-cms/backoffice": "^*",
+    "typescript": "^5.9.3",
+    "vite": "^7.1.9"
+  }
+}
