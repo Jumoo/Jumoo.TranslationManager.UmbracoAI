@@ -12,6 +12,21 @@
 		<Title>Jumoo.TranslationManager.UmbracoAi</Title>
 	</PropertyGroup>
 
+	<PropertyGroup>
+		<Authors>Jumoo</Authors>
+		<Company>Jumoo</Company>
+		<Copyright>Copyright © Jumoo. All rights reserved.</Copyright>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<RepositoryUrl>https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI</RepositoryUrl>
+		<PackageTags>umbraco, umbraco-cms, umbraco-ai, translations, umbraco-marketplace</PackageTags>
+		<Description>UmbracoAi Connector for Jumoo.TranslationManager</Description>
+
+		<PackageReadmeFile>readme.md</PackageReadmeFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="README.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="Jumoo.TranslationManager.AI" Version="17.2.1" />
