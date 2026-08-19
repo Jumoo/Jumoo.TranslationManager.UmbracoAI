@@ -70,6 +70,7 @@ public class UmbracoAiTranslator : AITranslatorBase, IAITranslator, ITranslation
         };
     }
 
-    // model comes from the 
+    // Umbraco.AI's profile (selected via umbai-profileId, or the default profile) is what
+    // actually determines the model - this connector has no model of its own to report.
     public override string? GetChatModel(AIOptions options) => "UmbracoAIModel";
 }

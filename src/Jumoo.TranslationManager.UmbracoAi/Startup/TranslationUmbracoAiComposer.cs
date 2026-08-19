@@ -11,6 +11,7 @@ using Umbraco.Cms.Infrastructure.Manifest;
 
 namespace Jumoo.TranslationManager.UmbracoAi.Startup;
 
+[ComposeAfter(typeof(Jumoo.TranslationManager.Core.Boot.TranslationComposer))]
 public class TranslationUmbracoAiComposer : IComposer
 {
     public void Compose(IUmbracoBuilder builder)
