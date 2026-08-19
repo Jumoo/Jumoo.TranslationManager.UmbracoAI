@@ -23,7 +23,7 @@
 		<PackageLicenseExpression>MPL-2.0</PackageLicenseExpression>
 		<PackageProjectUrl>https://jumoo.com</PackageProjectUrl>
 
-		<RepositoryUrl>https://github.com/Jumoo/UmbracoAI.Connector</RepositoryUrl>
+		<RepositoryUrl>https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 	</PropertyGroup>
 
