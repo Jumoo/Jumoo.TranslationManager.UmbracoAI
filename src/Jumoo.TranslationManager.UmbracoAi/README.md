@@ -48,4 +48,4 @@ For issues, questions, or contributions, please visit the [GitHub repository](ht
 
 ## License
 
-This package is licensed under the MIT License.
+This package is licensed under the Mozilla Public License 2.0 (MPL-2.0).

@@ -13,11 +13,6 @@
 	</PropertyGroup>
 
 	<PropertyGroup>
-		<Authors>Jumoo</Authors>
-		<Company>Jumoo</Company>
-		<Copyright>Copyright © Jumoo. All rights reserved.</Copyright>
-		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<RepositoryUrl>https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI</RepositoryUrl>
 		<PackageTags>umbraco, umbraco-cms, umbraco-ai, translations, umbraco-marketplace</PackageTags>
 		<Description>UmbracoAi Connector for Jumoo.TranslationManager</Description>
 
@@ -29,11 +24,11 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Jumoo.TranslationManager.AI" Version="17.3.3" />
-		<PackageReference Include="Umbraco.Cms.Web.Website" Version="17.3.5" />
-		<PackageReference Include="Umbraco.Cms.Web.Common" Version="17.3.5" />
-		<PackageReference Include="Umbraco.Cms.Api.Common" Version="17.3.5" />
-		<PackageReference Include="Umbraco.Cms.Api.Management" Version="17.3.5" />
+		<PackageReference Include="Jumoo.TranslationManager.AI" Version="17.4.1" />
+		<PackageReference Include="Umbraco.Cms.Web.Website" Version="17.5.0" />
+		<PackageReference Include="Umbraco.Cms.Web.Common" Version="17.5.0" />
+		<PackageReference Include="Umbraco.Cms.Api.Common" Version="17.5.0" />
+		<PackageReference Include="Umbraco.Cms.Api.Management" Version="17.5.0" />
 		<PackageReference Include="Umbraco.AI.Core" Version="1.10.1" />
 	</ItemGroup>
 

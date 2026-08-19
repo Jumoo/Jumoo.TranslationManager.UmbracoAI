@@ -18,7 +18,7 @@ This connector enables Translation Manager to leverage Umbraco.AI's profile-base
 
 - Umbraco CMS v17+
 - Jumoo Translation Manager v17.2.1+
-- Umbraco.AI.Core v1.0.0+
+- Umbraco.AI.Core v1.10.1+
 - .NET 10.0
 
 ## Installation
@@ -120,7 +120,23 @@ src/Jumoo.TranslationManager.UmbracoAi/
 
 ## Demo
 
-A demo Umbraco site is included in the `demo/AIConnector.Site/` folder to showcase the connector in action.
+A demo Umbraco site lives locally under `demo/AIConnector.Site/` for manual testing. It is not
+part of the repository — `.gitignore` excludes the whole `demo/` folder — so a fresh clone
+does not include one.
+
+## Building and releasing
+
+```bash
+dotnet restore src/Jumoo.TranslationManager.UmbracoAi/Jumoo.TranslationManager.UmbracoAi.csproj --locked-mode
+dotnet build src/Jumoo.TranslationManager.UmbracoAi/Jumoo.TranslationManager.UmbracoAi.csproj -c Release
+```
+
+CI (`.github/workflows`) restores with `--locked-mode` against `packages.lock.json`, builds the
+backoffice client before the connector, and packs the project — never the solution. Versions come
+from `Directory.Build.props` (`VersionPrefix`) and `GitVersion.yml`; don't hardcode a version in
+the csproj. Releases publish to NuGet from a `v{version}` tag pushed on a release branch, gated
+behind the `nuget` GitHub environment and authenticated with NuGet trusted publishing (OIDC)
+rather than a stored API key — see `.github/workflows/release.yml`.
 
 ## Resources
 
@@ -129,10 +145,14 @@ A demo Umbraco site is included in the `demo/AIConnector.Site/` folder to showca
 - [Node Version Manager (Windows)](https://github.com/coreybutler/nvm-windows)
 - [Node Version Manager (Unix)](https://github.com/nvm-sh/nvm)
 
+## Contributing
+
+Issues and feature requests are tracked in the public
+[Jumoo.TranslationManager.Issues](https://github.com/Jumoo/Jumoo.TranslationManager.Issues)
+repo, which covers Translation Manager and all its connectors. Please read
+[CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) before contributing, and see
+[SECURITY.md](SECURITY.md) for reporting a vulnerability.
+
 ## License
 
-Please refer to the license file included in this repository.
-
-## Support
-
-For issues, questions, or contributions, please visit the project repository.
+Licensed under the [Mozilla Public License 2.0](LICENSE).

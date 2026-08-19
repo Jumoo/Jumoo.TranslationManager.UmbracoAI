@@ -1,0 +1,58 @@
+version: 2
+updates:
+  - package-ecosystem: "nuget"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    # Umbraco, Umbraco.AI and the Translation Manager packages are pinned deliberately.
+    # The versions referenced here set the minimum for anyone installing the connector,
+    # so they move when we choose to move them - not on a weekly schedule. Note this
+    # also opts them out of dependabot security updates.
+    ignore:
+      - dependency-name: "Umbraco.*"
+      - dependency-name: "Jumoo.*"
+    # majors are deliberately left out of the group so they arrive as one PR each.
+    # grouping everything put typescript 5 -> 7 and vite 5 -> 8 in a single PR, which
+    # is not reviewable and fails as a unit.
+    groups:
+      nuget-dependencies:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+
+  # the backoffice client - @umbraco-cms/backoffice and @jumoo/* are pinned for the
+  # same reason as above, they have to line up with the server side packages.
+  - package-ecosystem: "npm"
+    directory: "/src/Jumoo.TranslationManager.UmbracoAi/Client"
+    schedule:
+      interval: "weekly"
+    ignore:
+      - dependency-name: "@umbraco-cms/*"
+      - dependency-name: "@jumoo/*"
+    groups:
+      npm-dependencies:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    # gittools/actions v4 requires GitVersion >= 6.2, which needs GitVersion.yml migrating
+    # to the v6 schema. Dependabot can't see that the action version and the versionSpec
+    # input are coupled, so it broke a release build once already. Unpin this when we do
+    # the GitVersion 6 migration deliberately.
+    ignore:
+      - dependency-name: "gittools/actions"
+    groups:
+      github-actions:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"

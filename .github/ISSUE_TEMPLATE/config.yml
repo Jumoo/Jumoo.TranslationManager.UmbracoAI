@@ -1,0 +1,16 @@
+# Issues for the connector are not tracked here. They go to the public
+# Jumoo.TranslationManager.Issues repo, which covers Translation Manager and all of its
+# connectors together - most reports involve both sides, and this repo is private so
+# people outside Jumoo cannot file against it anyway.
+blank_issues_enabled: false
+
+contact_links:
+  - name: Report a bug or request a feature
+    url: https://github.com/Jumoo/Jumoo.TranslationManager.Issues/issues/new/choose
+    about: Issues for the Umbraco AI connector are tracked in the public Translation Manager issues repo.
+
+  # /security/policy rather than a blob url - it resolves whatever the default branch
+  # is, so it survives the branch being renamed per Umbraco major.
+  - name: Report a security issue
+    url: https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/security/policy
+    about: Please do not report security problems in public. Email kevin@jumoo.co.uk instead.
