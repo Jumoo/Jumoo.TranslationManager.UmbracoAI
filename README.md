@@ -18,7 +18,7 @@ This connector enables Translation Manager to leverage Umbraco.AI's profile-base
 
 - Umbraco CMS v17+
 - Jumoo Translation Manager v17.2.1+
-- Umbraco.AI.Core v1.10.1+
+- Umbraco.AI.Core v17.3.1+
 - .NET 10.0
 
 ## Installation

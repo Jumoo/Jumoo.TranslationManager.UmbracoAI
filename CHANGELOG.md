@@ -26,6 +26,12 @@ Umbraco major, so versions track the Umbraco major they target.
   constructor at this version — a `TranslationMemoryJobService` parameter exists only on an
   unreleased branch of the AI library, not yet in a published version, so no code change was
   needed here. Worth re-checking before the next bump.
+- Bumped `Umbraco.Cms.*` further to 17.6.2 (latest 17.x) and `Umbraco.AI.Core` to 17.3.1
+  (from 1.10.1 — the old `1.x` version scheme was superseded by one that tracks the Umbraco
+  major it targets, and 17.3.1 is the latest under that scheme). Verified by booting the demo
+  site: Umbraco, Umbraco.AI's migrations, and Translation Manager's migrations all completed,
+  and the backoffice responded. `Jumoo.TranslationManager.AI` stays at 17.4.1 — its own latest
+  17.x release, matching Umbraco 17.6.x on the Umbraco.Cms.* side.
 
 ## 1.0.0
 
