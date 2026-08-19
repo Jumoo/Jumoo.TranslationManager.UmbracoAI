@@ -13,7 +13,7 @@
     "@jumoo/translate": "^17.0.0",
     "@jumoo/translate-ai": "^1.0.1",
     "@umbraco-cms/backoffice": "^*",
-    "typescript": "^5.9.3",
+    "typescript": "^7.0.2",
     "vite": "^7.1.9"
   }
 }
