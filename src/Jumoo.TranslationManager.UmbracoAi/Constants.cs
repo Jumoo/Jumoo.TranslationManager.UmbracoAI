@@ -11,4 +11,7 @@ internal static class Constants
 
     public const string ConnectorPath = "/App_Plugins/Jumoo.TranslationManagerUmbracoAi";
 
+    public static readonly Guid ProviderKey = new("a62573ad-c99b-47e4-8b5a-0087a4fa510f");
+
+    public const string ToolScopeId = "translation-manager";
 }
