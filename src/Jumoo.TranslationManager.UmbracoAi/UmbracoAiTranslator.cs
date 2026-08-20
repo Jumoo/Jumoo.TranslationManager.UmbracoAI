@@ -18,7 +18,7 @@ public class UmbracoAiTranslator : AITranslatorBase, IAITranslator, ITranslation
 {
     public override string Name => Constants.ConnectorName;
     public override string Alias => Constants.ConnectorAlias;
-    public override Guid Key => new("a62573ad-c99b-47e4-8b5a-0087a4fa510f");
+    public override Guid Key => Constants.ProviderKey;
 
     private readonly IAIChatService _chatService;
 
