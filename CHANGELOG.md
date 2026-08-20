@@ -3,7 +3,19 @@
 Notable changes to `Jumoo.TranslationManager.UmbracoAi`. The connector ships one release line per
 Umbraco major, so versions track the Umbraco major they target.
 
-## Unreleased
+## 17.1.0
+
+### Added
+
+- `translate_page` AI Tool — lets an editor trigger a Translation Manager job from
+  Umbraco Copilot's chat panel (e.g. "translate this page to French"), resolving the
+  target culture/site from the page's existing Translation Manager configuration. Supports
+  `includeChildren` to bundle a page and its descendants into one job, and `publish` to
+  approve and publish the result inline via the existing AutoApprove notification flow.
+  Returns a link to the job for the assistant to share with the editor. See
+  [docs/tools.md](docs/tools.md).
+
+## 17.0.0
 
 ### Added
 
