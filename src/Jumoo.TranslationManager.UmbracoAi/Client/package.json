@@ -8,8 +8,6 @@
     "build": "tsc && vite build"
   },
   "devDependencies": {
-    "@hey-api/client-fetch": "^0.13.1",
-    "@hey-api/openapi-ts": "^0.85.0",
     "@jumoo/translate": "^17.0.0",
     "@jumoo/translate-ai": "^1.0.1",
     "@umbraco-cms/backoffice": "^*",
